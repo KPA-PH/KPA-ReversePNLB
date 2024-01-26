@@ -1,0 +1,29 @@
+{
+    "bind_ip": "0.0.0.0",
+    "port": 20032,
+    "channel": "kpa-4b6f588b-d57b-4a93-8836-8c564f39e33c",
+    "error_notify": {
+        "emails": "talkme@mail.kpa.ph",
+        "mobiles": "639605614295"
+    },
+    "servers": [
+        {
+            "name" : "Website Name",
+            "health_check_time": 5,
+            "addresses": [
+                {
+                    "server_name": "AWS-US Server",
+                    "server_location": "EC2 | us-west-1",
+                    "server_ip_address": "127.0.0.1",
+                    "server_hostname": "http://127.0.0.1:8000"
+                },
+                {
+                    "server_name": "AWS-SG Server",
+                    "server_location": "EC2 | sg-asia-1",
+                    "server_ip_address": "127.0.0.1",
+                    "server_hostname": "http://127.0.0.1:8000"
+                }
+            ]
+        }
+    ]
+}
