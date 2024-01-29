@@ -49,7 +49,7 @@ Before you run the **(shMonitor.exe)**, you must set your **(config.json)**. Ent
 {
     "bind_ip": "0.0.0.0",
     "port": 20032,
-    "channel": "kpa-4b6f588b-d57b-4a93-8836-8c564f39e33c",
+    "channel": "ANY-STRING-UPDATE-ME",
     "error_notify": {
         "emails": "talkme@mail.kpa.ph",
         "mobiles": "639605614295"
