@@ -1,5 +1,5 @@
 {
-    "bind_ip": "0.0.0.0",
+    "bind_ip": "127.0.0.1",
     "port": 20032,
     "channel": "kpa-4b6f588b-d57b-4a93-8836-8c564f39e33c",
     "error_notify": {
