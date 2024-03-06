@@ -86,14 +86,12 @@ Before you run the **(shMonitor.exe)**, you must set your **(config.json)**. Ent
 - **servers** - for all servers to be load-balanced
 - **name** - Any name
 - **health_check_time** - default 5 seconds
-- **addresses** - [
+- **addresses** -
     - **server_name** - server name
     - **server_location** - server location
     - **server_ip_address** - server ip
     - **server_hostname** - http only
     - **server_health_check** - http or https | You can create any path or any.html / *.extention. Be sure that the HTTP response is 200 code.
-    
-]
 
 # Contact me
 
