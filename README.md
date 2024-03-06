@@ -63,13 +63,15 @@ Before you run the **(shMonitor.exe)**, you must set your **(config.json)**. Ent
                     "server_name": "AWS-US Server",
                     "server_location": "EC2 | us-west-1",
                     "server_ip_address": "127.0.0.1",
-                    "server_hostname": "http://127.0.0.1:8080"
+                    "server_hostname": "http://127.0.0.1:8080",
+                    "server_health_check": "http://127.0.0.1:8080/health"
                 },
                 {
                     "server_name": "AWS-SG Server",
                     "server_location": "EC2 | sg-asia-1",
                     "server_ip_address": "127.0.0.1",
-                    "server_hostname": "http://127.0.0.1:8080"
+                    "server_hostname": "http://127.0.0.1:8080",
+                    "server_health_check": "http://127.0.0.1:8080/health"
                 },
                 {*** You can add more here. Remove this when you use it. ***}
             ]
@@ -82,6 +84,15 @@ Before you run the **(shMonitor.exe)**, you must set your **(config.json)**. Ent
 - **channel** - for socket channel, any string as long unique
 - **error_notify** - for Email and SMS notification if something went wrong with the servers. However, this is not working at this moment.
 - **servers** - for all servers to be load-balanced
+-- **name** - Any name
+-- **health_check_time** - default 5 seconds
+-- **addresses** - [
+    -- **server_name** - server name
+    -- **server_location** - server location
+    -- **server_ip_address** - server ip
+    -- **server_hostname** - http only
+    -- **server_health_check** - http or https | You can create any path or any.html / *.extention. Be sure that the HTTP response is 200 code.
+]
 
 # Contact me
 
