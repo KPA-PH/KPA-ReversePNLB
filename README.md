@@ -1,7 +1,7 @@
 
 # KPA-ReversePNLB
 
-**Reverse Proxy:** Also distributes traffic. However, it is primarily concerned with limiting and safeguarding server access. Or, it's hiding your Server IP Address.
+**Reverse Proxy:** It also distributes traffic. However, it is primarily concerned with limiting and safeguarding server access or hiding your Server IP Address.
 
 **Load Balancer:** Concerned with distributing traffic/requests. Prevent bottlenecks, maximize throughput, and optimize resource consumption.
 
@@ -41,6 +41,8 @@ You must download and install the dotnet runtime. See the download link below:
 
 ## How to use it?
 
+Download **single website** - Only use a single website if you use one module or site. No other websites will be proxied within that domain.
+
 Before you run the **(shMonitor.exe)**, you must set your **(config.json)**. Enter your server IP addresses. See the sample below:
 
 ## Sample config.json
@@ -73,7 +75,7 @@ Before you run the **(shMonitor.exe)**, you must set your **(config.json)**. Ent
                     "server_hostname": "http://127.0.0.1:8080",
                     "server_health_check": "http://127.0.0.1:8080/health"
                 },
-                {*** You can add more here. Remove this when you use it. ***}
+                {*** You are encouraged to add more details here. Just remember to remove this note once you include it. ***}
             ]
         }
     ]
@@ -81,7 +83,7 @@ Before you run the **(shMonitor.exe)**, you must set your **(config.json)**. Ent
 ```
 
 - **bind_ip** and **port** - for web access
-- **channel** - for socket channel, any string as long unique
+- **channel** - for socket channel, any string as long as unique
 - **error_notify** - for Email and SMS notification if something went wrong with the servers. However, this is not working at this moment.
 - **servers** - for all servers to be load-balanced
     - **name** - any name
