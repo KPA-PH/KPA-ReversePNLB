@@ -21,6 +21,10 @@ I can check the server's health in real time as well. Not to mention that I can 
 
 Download all files and save them to your preferred folder location. 
 
+**single-website** - Only use a single website if you use one module or site. No other websites will be proxied within that domain.
+
+**multiple websites** — Use multiple websites only when managing several sites under one domain to maximize your impact and streamline your efforts.
+
 Then, open IIS, Site -> Add Website -> point to the folder location. 
 
 Then, bind the IP with Port or use your Domain/Hostname.
@@ -40,8 +44,6 @@ You must download and install the dotnet runtime. See the download link below:
 # KPA-shMonitor
 
 ## How to use it?
-
-Download **single website** - Only use a single website if you use one module or site. No other websites will be proxied within that domain.
 
 Before you run the **(shMonitor.exe)**, you must set your **(config.json)**. Enter your server IP addresses. See the sample below:
 
